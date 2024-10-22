@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ec385d13eade86c6d41bb4d7bd56a2e6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ec385d13eade86c6d41bb4d7bd56a2e6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ec385d13eade86c6d41bb4d7bd56a2e6 = L.map(
+                "map_ec385d13eade86c6d41bb4d7bd56a2e6",
+                {
+                    center: [35.1796, 129.0756],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2d34cd13ae86b3e0288d8f3be36421e3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+            var marker_0f1460c9441ce11bbb989ca0ffb5f056 = L.marker(
+                [35.1903, 129.0585],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_f929a6a5e4c4da26fd600231fdaf490e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37b19ef50a960ae289d44504e27bd219 = $(`<div id="html_37b19ef50a960ae289d44504e27bd219" style="width: 100.0%; height: 100.0%;">Busan Asiad Main Stadium</div>`)[0];
+            popup_f929a6a5e4c4da26fd600231fdaf490e.setContent(html_37b19ef50a960ae289d44504e27bd219);
+        
+
+        marker_0f1460c9441ce11bbb989ca0ffb5f056.bindPopup(popup_f929a6a5e4c4da26fd600231fdaf490e)
+        ;
+
+        
+    
+    
+            marker_0f1460c9441ce11bbb989ca0ffb5f056.bindTooltip(
+                `<div>
+                     Busan Asiad Main Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1b1ebda68e2ab915aab8f7e37f33c34 = L.marker(
+                [35.1683, 129.1342],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_3a00fc93b49b4db2f5d0566452ac81f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_645c077138079b0108f00bd90df6b085 = $(`<div id="html_645c077138079b0108f00bd90df6b085" style="width: 100.0%; height: 100.0%;">BEXCO</div>`)[0];
+            popup_3a00fc93b49b4db2f5d0566452ac81f7.setContent(html_645c077138079b0108f00bd90df6b085);
+        
+
+        marker_b1b1ebda68e2ab915aab8f7e37f33c34.bindPopup(popup_3a00fc93b49b4db2f5d0566452ac81f7)
+        ;
+
+        
+    
+    
+            marker_b1b1ebda68e2ab915aab8f7e37f33c34.bindTooltip(
+                `<div>
+                     BEXCO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0e2eeeb1087ddeb00751a99f7897cad = L.marker(
+                [35.1944, 129.0603],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_5ad494b46ef7cce790037c1d71a0b74f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9a051a459a23e76b8a2e2d9c9deadca = $(`<div id="html_a9a051a459a23e76b8a2e2d9c9deadca" style="width: 100.0%; height: 100.0%;">Sajik Baseball Stadium</div>`)[0];
+            popup_5ad494b46ef7cce790037c1d71a0b74f.setContent(html_a9a051a459a23e76b8a2e2d9c9deadca);
+        
+
+        marker_d0e2eeeb1087ddeb00751a99f7897cad.bindPopup(popup_5ad494b46ef7cce790037c1d71a0b74f)
+        ;
+
+        
+    
+    
+            marker_d0e2eeeb1087ddeb00751a99f7897cad.bindTooltip(
+                `<div>
+                     Sajik Baseball Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d17f668af5f0e9348f006d29d30de15 = L.marker(
+                [35.1107, 129.0119],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_940142a98003d9e2c63c1ea0d2918c28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8e96f40bee959c365f64cb5b9db3133 = $(`<div id="html_c8e96f40bee959c365f64cb5b9db3133" style="width: 100.0%; height: 100.0%;">Gudeok Stadium</div>`)[0];
+            popup_940142a98003d9e2c63c1ea0d2918c28.setContent(html_c8e96f40bee959c365f64cb5b9db3133);
+        
+
+        marker_3d17f668af5f0e9348f006d29d30de15.bindPopup(popup_940142a98003d9e2c63c1ea0d2918c28)
+        ;
+
+        
+    
+    
+            marker_3d17f668af5f0e9348f006d29d30de15.bindTooltip(
+                `<div>
+                     Gudeok Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9580b2490705f202d00f4f79e2a8c355 = L.marker(
+                [35.1946, 129.0601],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_2f20bc28aa2c2e588a9ed5aeaf9fb562 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c144528943b29906631e592d027f2f26 = $(`<div id="html_c144528943b29906631e592d027f2f26" style="width: 100.0%; height: 100.0%;">Sajik Indoor Gymnasium</div>`)[0];
+            popup_2f20bc28aa2c2e588a9ed5aeaf9fb562.setContent(html_c144528943b29906631e592d027f2f26);
+        
+
+        marker_9580b2490705f202d00f4f79e2a8c355.bindPopup(popup_2f20bc28aa2c2e588a9ed5aeaf9fb562)
+        ;
+
+        
+    
+    
+            marker_9580b2490705f202d00f4f79e2a8c355.bindTooltip(
+                `<div>
+                     Sajik Indoor Gymnasium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7072f79dc0b87f5d9943c4755bec4ce4 = L.marker(
+                [35.158, 129.1633],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_62bba204766a5a7e3a3335b3fb839552 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f2e35087d1ce1ec808e906b93e95833 = $(`<div id="html_9f2e35087d1ce1ec808e906b93e95833" style="width: 100.0%; height: 100.0%;">Haeundae Beach</div>`)[0];
+            popup_62bba204766a5a7e3a3335b3fb839552.setContent(html_9f2e35087d1ce1ec808e906b93e95833);
+        
+
+        marker_7072f79dc0b87f5d9943c4755bec4ce4.bindPopup(popup_62bba204766a5a7e3a3335b3fb839552)
+        ;
+
+        
+    
+    
+            marker_7072f79dc0b87f5d9943c4755bec4ce4.bindTooltip(
+                `<div>
+                     Haeundae Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e26327c47060bb2b4bcf6ea211ef099 = L.marker(
+                [35.1537, 129.128],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_ef0e3ef43b9dbb16916a97404bf20c55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1935d4e1eba6f4d3aeecde3a7ba6a0b9 = $(`<div id="html_1935d4e1eba6f4d3aeecde3a7ba6a0b9" style="width: 100.0%; height: 100.0%;">Suyeong Bay Yacht Center</div>`)[0];
+            popup_ef0e3ef43b9dbb16916a97404bf20c55.setContent(html_1935d4e1eba6f4d3aeecde3a7ba6a0b9);
+        
+
+        marker_3e26327c47060bb2b4bcf6ea211ef099.bindPopup(popup_ef0e3ef43b9dbb16916a97404bf20c55)
+        ;
+
+        
+    
+    
+            marker_3e26327c47060bb2b4bcf6ea211ef099.bindTooltip(
+                `<div>
+                     Suyeong Bay Yacht Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6c779ca7eff6446b1e63f5a7f498241 = L.marker(
+                [35.1177, 128.9787],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_d47b332b252740a49123f133bd9a1a3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0751c70fbc28e8e8eb365f728bdb4e51 = $(`<div id="html_0751c70fbc28e8e8eb365f728bdb4e51" style="width: 100.0%; height: 100.0%;">Seonakdong River Rowing & Canoeing Center</div>`)[0];
+            popup_d47b332b252740a49123f133bd9a1a3b.setContent(html_0751c70fbc28e8e8eb365f728bdb4e51);
+        
+
+        marker_d6c779ca7eff6446b1e63f5a7f498241.bindPopup(popup_d47b332b252740a49123f133bd9a1a3b)
+        ;
+
+        
+    
+    
+            marker_d6c779ca7eff6446b1e63f5a7f498241.bindTooltip(
+                `<div>
+                     Seonakdong River Rowing & Canoeing Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69e648cb42e0416238de6f115cba443e = L.marker(
+                [35.2304, 128.9801],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_c96a77fe5878be1b3f1693eeffc03f5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1738ad5aa2431af5331e021ddeed1d20 = $(`<div id="html_1738ad5aa2431af5331e021ddeed1d20" style="width: 100.0%; height: 100.0%;">Gangseo Archery Range</div>`)[0];
+            popup_c96a77fe5878be1b3f1693eeffc03f5d.setContent(html_1738ad5aa2431af5331e021ddeed1d20);
+        
+
+        marker_69e648cb42e0416238de6f115cba443e.bindPopup(popup_c96a77fe5878be1b3f1693eeffc03f5d)
+        ;
+
+        
+    
+    
+            marker_69e648cb42e0416238de6f115cba443e.bindTooltip(
+                `<div>
+                     Gangseo Archery Range
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e259ba923b918dc05e9b2529c765332 = L.marker(
+                [35.1379, 129.1026],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_29ac0e8414b6ab71d85f9ac48e0e5411 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c62b22f8ec92b5f74ef14111cbd19e33 = $(`<div id="html_c62b22f8ec92b5f74ef14111cbd19e33" style="width: 100.0%; height: 100.0%;">Pukyong National University Gymnasium</div>`)[0];
+            popup_29ac0e8414b6ab71d85f9ac48e0e5411.setContent(html_c62b22f8ec92b5f74ef14111cbd19e33);
+        
+
+        marker_6e259ba923b918dc05e9b2529c765332.bindPopup(popup_29ac0e8414b6ab71d85f9ac48e0e5411)
+        ;
+
+        
+    
+    
+            marker_6e259ba923b918dc05e9b2529c765332.bindTooltip(
+                `<div>
+                     Pukyong National University Gymnasium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6eab84523b52a9c156c736ca60e122c = L.marker(
+                [35.1537, 129.1189],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_b4f24ad23690b821138b6ea8ea01926c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ad1094c6c042aabdcb8496c9a320e50 = $(`<div id="html_1ad1094c6c042aabdcb8496c9a320e50" style="width: 100.0%; height: 100.0%;">Gwangalli Beach</div>`)[0];
+            popup_b4f24ad23690b821138b6ea8ea01926c.setContent(html_1ad1094c6c042aabdcb8496c9a320e50);
+        
+
+        marker_b6eab84523b52a9c156c736ca60e122c.bindPopup(popup_b4f24ad23690b821138b6ea8ea01926c)
+        ;
+
+        
+    
+    
+            marker_b6eab84523b52a9c156c736ca60e122c.bindTooltip(
+                `<div>
+                     Gwangalli Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e47aaa410d94e8dde4239ba580ecaa94 = L.marker(
+                [35.1641, 128.9902],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_63e8454e61c137c1499041b9ca73e483 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c9d86a83330d6bd79619a33b18b5e23 = $(`<div id="html_1c9d86a83330d6bd79619a33b18b5e23" style="width: 100.0%; height: 100.0%;">Dongseo University Minseok Sports Center</div>`)[0];
+            popup_63e8454e61c137c1499041b9ca73e483.setContent(html_1c9d86a83330d6bd79619a33b18b5e23);
+        
+
+        marker_e47aaa410d94e8dde4239ba580ecaa94.bindPopup(popup_63e8454e61c137c1499041b9ca73e483)
+        ;
+
+        
+    
+    
+            marker_e47aaa410d94e8dde4239ba580ecaa94.bindTooltip(
+                `<div>
+                     Dongseo University Minseok Sports Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8531f92444d6040c698fef2569b8b9a = L.marker(
+                [35.2395, 129.0893],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_4182badd744f6e79c7915f9cc7e33cf0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa13cedb9d1ab10a02e44a0525e461fe = $(`<div id="html_aa13cedb9d1ab10a02e44a0525e461fe" style="width: 100.0%; height: 100.0%;">Geumjeong Sports Complex</div>`)[0];
+            popup_4182badd744f6e79c7915f9cc7e33cf0.setContent(html_aa13cedb9d1ab10a02e44a0525e461fe);
+        
+
+        marker_b8531f92444d6040c698fef2569b8b9a.bindPopup(popup_4182badd744f6e79c7915f9cc7e33cf0)
+        ;
+
+        
+    
+    
+            marker_b8531f92444d6040c698fef2569b8b9a.bindTooltip(
+                `<div>
+                     Geumjeong Sports Complex
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79e832ad495cf8a0cd32bba66062cd42 = L.marker(
+                [35.2333, 128.9814],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_ce1621010f8278f4779ebd45063c5db6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd1bc1221e577f0bad1deeb89d98364e = $(`<div id="html_cd1bc1221e577f0bad1deeb89d98364e" style="width: 100.0%; height: 100.0%;">Gangseo Sports Complex</div>`)[0];
+            popup_ce1621010f8278f4779ebd45063c5db6.setContent(html_cd1bc1221e577f0bad1deeb89d98364e);
+        
+
+        marker_79e832ad495cf8a0cd32bba66062cd42.bindPopup(popup_ce1621010f8278f4779ebd45063c5db6)
+        ;
+
+        
+    
+    
+            marker_79e832ad495cf8a0cd32bba66062cd42.bindTooltip(
+                `<div>
+                     Gangseo Sports Complex
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a25521482c2962afc3e6f18c54eb85a3 = L.marker(
+                [35.2449, 129.2179],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_2cd25d6639079a3f2f01ba140f000e54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76b8100bdc55f0548fef706887e062e2 = $(`<div id="html_76b8100bdc55f0548fef706887e062e2" style="width: 100.0%; height: 100.0%;">Gijang Indoor Stadium</div>`)[0];
+            popup_2cd25d6639079a3f2f01ba140f000e54.setContent(html_76b8100bdc55f0548fef706887e062e2);
+        
+
+        marker_a25521482c2962afc3e6f18c54eb85a3.bindPopup(popup_2cd25d6639079a3f2f01ba140f000e54)
+        ;
+
+        
+    
+    
+            marker_a25521482c2962afc3e6f18c54eb85a3.bindTooltip(
+                `<div>
+                     Gijang Indoor Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7c8158d6cf758bf8e9d098255c80150 = L.marker(
+                [35.1066, 129.0212],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_1e65870620ca0087da481cadb60fa57c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8200dcc017ae1a0c47b615f7924de89e = $(`<div id="html_8200dcc017ae1a0c47b615f7924de89e" style="width: 100.0%; height: 100.0%;">Gudeok Indoor Stadium</div>`)[0];
+            popup_1e65870620ca0087da481cadb60fa57c.setContent(html_8200dcc017ae1a0c47b615f7924de89e);
+        
+
+        marker_f7c8158d6cf758bf8e9d098255c80150.bindPopup(popup_1e65870620ca0087da481cadb60fa57c)
+        ;
+
+        
+    
+    
+            marker_f7c8158d6cf758bf8e9d098255c80150.bindTooltip(
+                `<div>
+                     Gudeok Indoor Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76332fa0bbd7ac2ca3e6173f13da806d = L.marker(
+                [35.196, 129.061],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_b0e2a70d999283e90381289b6adc1590 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d48631499d8af9b40f1356c096eb94f = $(`<div id="html_1d48631499d8af9b40f1356c096eb94f" style="width: 100.0%; height: 100.0%;">Sajik Tennis Courts</div>`)[0];
+            popup_b0e2a70d999283e90381289b6adc1590.setContent(html_1d48631499d8af9b40f1356c096eb94f);
+        
+
+        marker_76332fa0bbd7ac2ca3e6173f13da806d.bindPopup(popup_b0e2a70d999283e90381289b6adc1590)
+        ;
+
+        
+    
+    
+            marker_76332fa0bbd7ac2ca3e6173f13da806d.bindTooltip(
+                `<div>
+                     Sajik Tennis Courts
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fae21c5784bcf5f4fb663e0b33700f3 = L.marker(
+                [35.1905, 129.059],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_884e6f497ed4e4b0671e644fb2cb7b14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bb9d4564701540744f548cc052ffbac = $(`<div id="html_3bb9d4564701540744f548cc052ffbac" style="width: 100.0%; height: 100.0%;">Busan Auxiliary Stadium</div>`)[0];
+            popup_884e6f497ed4e4b0671e644fb2cb7b14.setContent(html_3bb9d4564701540744f548cc052ffbac);
+        
+
+        marker_8fae21c5784bcf5f4fb663e0b33700f3.bindPopup(popup_884e6f497ed4e4b0671e644fb2cb7b14)
+        ;
+
+        
+    
+    
+            marker_8fae21c5784bcf5f4fb663e0b33700f3.bindTooltip(
+                `<div>
+                     Busan Auxiliary Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa491c53df076373bdd363cd96cb9489 = L.marker(
+                [35.1404, 128.9723],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_ebc22ee98590a7a25243a49e8792a1a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca2b72c609c6855266768e6423a6213f = $(`<div id="html_ca2b72c609c6855266768e6423a6213f" style="width: 100.0%; height: 100.0%;">Samnak Ecological Park</div>`)[0];
+            popup_ebc22ee98590a7a25243a49e8792a1a1.setContent(html_ca2b72c609c6855266768e6423a6213f);
+        
+
+        marker_aa491c53df076373bdd363cd96cb9489.bindPopup(popup_ebc22ee98590a7a25243a49e8792a1a1)
+        ;
+
+        
+    
+    
+            marker_aa491c53df076373bdd363cd96cb9489.bindTooltip(
+                `<div>
+                     Samnak Ecological Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4b8692a446b6f0014cd46ae16caab82 = L.marker(
+                [35.1935, 129.06],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_789b594ea49faa05bc5eebcaca9cde69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_974b2df374b17f373451d0711c2caf29 = $(`<div id="html_974b2df374b17f373451d0711c2caf29" style="width: 100.0%; height: 100.0%;">Sajik Arena</div>`)[0];
+            popup_789b594ea49faa05bc5eebcaca9cde69.setContent(html_974b2df374b17f373451d0711c2caf29);
+        
+
+        marker_b4b8692a446b6f0014cd46ae16caab82.bindPopup(popup_789b594ea49faa05bc5eebcaca9cde69)
+        ;
+
+        
+    
+    
+            marker_b4b8692a446b6f0014cd46ae16caab82.bindTooltip(
+                `<div>
+                     Sajik Arena
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f9af44812d05d32246e7e0c6a9fa1f5 = L.marker(
+                [35.0852, 129.0682],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_7d80bf7ffdcc7f9f625689e48f4b1a2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27c9b120577be3ccb2d409594f30bfd0 = $(`<div id="html_27c9b120577be3ccb2d409594f30bfd0" style="width: 100.0%; height: 100.0%;">Yeongdo Diving Pool</div>`)[0];
+            popup_7d80bf7ffdcc7f9f625689e48f4b1a2a.setContent(html_27c9b120577be3ccb2d409594f30bfd0);
+        
+
+        marker_8f9af44812d05d32246e7e0c6a9fa1f5.bindPopup(popup_7d80bf7ffdcc7f9f625689e48f4b1a2a)
+        ;
+
+        
+    
+    
+            marker_8f9af44812d05d32246e7e0c6a9fa1f5.bindTooltip(
+                `<div>
+                     Yeongdo Diving Pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2df6c02b242681f65e188553f82e37b = L.marker(
+                [35.1847, 129.2],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_088b18fc0614f9076a14e125508cad90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cb5ecb493a4fa155bda5f8a23355b95 = $(`<div id="html_5cb5ecb493a4fa155bda5f8a23355b95" style="width: 100.0%; height: 100.0%;">Songjeong Beach</div>`)[0];
+            popup_088b18fc0614f9076a14e125508cad90.setContent(html_5cb5ecb493a4fa155bda5f8a23355b95);
+        
+
+        marker_d2df6c02b242681f65e188553f82e37b.bindPopup(popup_088b18fc0614f9076a14e125508cad90)
+        ;
+
+        
+    
+    
+            marker_d2df6c02b242681f65e188553f82e37b.bindTooltip(
+                `<div>
+                     Songjeong Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25e1a09ce0cbe08732a1c3be7cb3d4fc = L.marker(
+                [35.157, 129.058],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_274fe1375638ec46516b085f2c3b750b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5989cae78db95f315b79f21e16edc48c = $(`<div id="html_5989cae78db95f315b79f21e16edc48c" style="width: 100.0%; height: 100.0%;">Busan Citizens' Park</div>`)[0];
+            popup_274fe1375638ec46516b085f2c3b750b.setContent(html_5989cae78db95f315b79f21e16edc48c);
+        
+
+        marker_25e1a09ce0cbe08732a1c3be7cb3d4fc.bindPopup(popup_274fe1375638ec46516b085f2c3b750b)
+        ;
+
+        
+    
+    
+            marker_25e1a09ce0cbe08732a1c3be7cb3d4fc.bindTooltip(
+                `<div>
+                     Busan Citizens' Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c953acf882797f7d04743eb2d3a66eec = L.marker(
+                [35.0852, 129.0681],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_4d2b9cc0ede84dfb7388c52f98f0c092 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62e27545a967e86c424f990df8d52a00 = $(`<div id="html_62e27545a967e86c424f990df8d52a00" style="width: 100.0%; height: 100.0%;">DongSam Innovation District</div>`)[0];
+            popup_4d2b9cc0ede84dfb7388c52f98f0c092.setContent(html_62e27545a967e86c424f990df8d52a00);
+        
+
+        marker_c953acf882797f7d04743eb2d3a66eec.bindPopup(popup_4d2b9cc0ede84dfb7388c52f98f0c092)
+        ;
+
+        
+    
+    
+            marker_c953acf882797f7d04743eb2d3a66eec.bindTooltip(
+                `<div>
+                     DongSam Innovation District
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_446d7f93d950e2f67fc6492dd2159962 = L.marker(
+                [35.2177, 129.0177],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_ac704a51791dbe1596cb8b000cc9fecf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab7b043e2ee695aadd4a61ee38934a28 = $(`<div id="html_ab7b043e2ee695aadd4a61ee38934a28" style="width: 100.0%; height: 100.0%;">OCEANIX Busan</div>`)[0];
+            popup_ac704a51791dbe1596cb8b000cc9fecf.setContent(html_ab7b043e2ee695aadd4a61ee38934a28);
+        
+
+        marker_446d7f93d950e2f67fc6492dd2159962.bindPopup(popup_ac704a51791dbe1596cb8b000cc9fecf)
+        ;
+
+        
+    
+    
+            marker_446d7f93d950e2f67fc6492dd2159962.bindTooltip(
+                `<div>
+                     OCEANIX Busan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74d26b8523d6e61d871e65b83f7beb02 = L.marker(
+                [35.244, 129.215],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_caef57f78e2ed291cc7f7a5858754832 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0e8f98a907a270d4de31746692d6c6a = $(`<div id="html_b0e8f98a907a270d4de31746692d6c6a" style="width: 100.0%; height: 100.0%;">East Busan Tourism Complex (Osiria Complex)</div>`)[0];
+            popup_caef57f78e2ed291cc7f7a5858754832.setContent(html_b0e8f98a907a270d4de31746692d6c6a);
+        
+
+        marker_74d26b8523d6e61d871e65b83f7beb02.bindPopup(popup_caef57f78e2ed291cc7f7a5858754832)
+        ;
+
+        
+    
+    
+            marker_74d26b8523d6e61d871e65b83f7beb02.bindTooltip(
+                `<div>
+                     East Busan Tourism Complex (Osiria Complex)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80c9b7e14885a207b4dd69b20798e258 = L.marker(
+                [35.1706, 129.1266],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_edc3bf703e0ab05558a12bd12f325f8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_671c175d3c9d94c33ed6d5b57bcac17a = $(`<div id="html_671c175d3c9d94c33ed6d5b57bcac17a" style="width: 100.0%; height: 100.0%;">Haeundae Athletes’ Village Apartments</div>`)[0];
+            popup_edc3bf703e0ab05558a12bd12f325f8f.setContent(html_671c175d3c9d94c33ed6d5b57bcac17a);
+        
+
+        marker_80c9b7e14885a207b4dd69b20798e258.bindPopup(popup_edc3bf703e0ab05558a12bd12f325f8f)
+        ;
+
+        
+    
+    
+            marker_80c9b7e14885a207b4dd69b20798e258.bindTooltip(
+                `<div>
+                     Haeundae Athletes’ Village Apartments
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be421cdf9d4244fcd85eff4e6274f8bc = L.marker(
+                [35.1579, 129.058],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_ba5e016d5b92e38afae3b80471b4df6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_964be4de42ee5aa94dda20f42dbca0c4 = $(`<div id="html_964be4de42ee5aa94dda20f42dbca0c4" style="width: 100.0%; height: 100.0%;">Lotte Hotel Busan</div>`)[0];
+            popup_ba5e016d5b92e38afae3b80471b4df6b.setContent(html_964be4de42ee5aa94dda20f42dbca0c4);
+        
+
+        marker_be421cdf9d4244fcd85eff4e6274f8bc.bindPopup(popup_ba5e016d5b92e38afae3b80471b4df6b)
+        ;
+
+        
+    
+    
+            marker_be421cdf9d4244fcd85eff4e6274f8bc.bindTooltip(
+                `<div>
+                     Lotte Hotel Busan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8b48cbf1475f353614e6f966f27edd2 = L.marker(
+                [35.1413, 128.9147],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_25e0182bf4209a118f374920c111fdec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cff61c86e1635dc42ea3ee0bb21494d7 = $(`<div id="html_cff61c86e1635dc42ea3ee0bb21494d7" style="width: 100.0%; height: 100.0%;">Busan Eco Delta City</div>`)[0];
+            popup_25e0182bf4209a118f374920c111fdec.setContent(html_cff61c86e1635dc42ea3ee0bb21494d7);
+        
+
+        marker_c8b48cbf1475f353614e6f966f27edd2.bindPopup(popup_25e0182bf4209a118f374920c111fdec)
+        ;
+
+        
+    
+    
+            marker_c8b48cbf1475f353614e6f966f27edd2.bindTooltip(
+                `<div>
+                     Busan Eco Delta City
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5e41263b30fe001da4e42a7524258d5 = L.marker(
+                [35.1047, 129.0401],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_f63fab5d368bedef6f4bf4221a2e2cef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ae5358215c06db1cf91a7a3666b314b = $(`<div id="html_0ae5358215c06db1cf91a7a3666b314b" style="width: 100.0%; height: 100.0%;">Busan Port International Passenger Terminal</div>`)[0];
+            popup_f63fab5d368bedef6f4bf4221a2e2cef.setContent(html_0ae5358215c06db1cf91a7a3666b314b);
+        
+
+        marker_b5e41263b30fe001da4e42a7524258d5.bindPopup(popup_f63fab5d368bedef6f4bf4221a2e2cef)
+        ;
+
+        
+    
+    
+            marker_b5e41263b30fe001da4e42a7524258d5.bindTooltip(
+                `<div>
+                     Busan Port International Passenger Terminal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39503186f64b9c90621f988b934fb10c = L.marker(
+                [35.1778, 128.9389],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_e6ee051f184d1a6aaa5e3cc342ec77e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bb0918dc037b7c93649009d0740bba3 = $(`<div id="html_6bb0918dc037b7c93649009d0740bba3" style="width: 100.0%; height: 100.0%;">Gimhae International Airport</div>`)[0];
+            popup_e6ee051f184d1a6aaa5e3cc342ec77e5.setContent(html_6bb0918dc037b7c93649009d0740bba3);
+        
+
+        marker_39503186f64b9c90621f988b934fb10c.bindPopup(popup_e6ee051f184d1a6aaa5e3cc342ec77e5)
+        ;
+
+        
+    
+    
+            marker_39503186f64b9c90621f988b934fb10c.bindTooltip(
+                `<div>
+                     Gimhae International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9619a4e1d0aec1edae6284c3f6fe0288 = L.marker(
+                [35.0869, 128.8716],
+                {}
+            ).addTo(map_ec385d13eade86c6d41bb4d7bd56a2e6);
+        
+    
+        var popup_96d67ad0beae53cd639d9cd5d73203bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2184eba279a38524315982a7bfa5b75a = $(`<div id="html_2184eba279a38524315982a7bfa5b75a" style="width: 100.0%; height: 100.0%;">Busan New Port</div>`)[0];
+            popup_96d67ad0beae53cd639d9cd5d73203bc.setContent(html_2184eba279a38524315982a7bfa5b75a);
+        
+
+        marker_9619a4e1d0aec1edae6284c3f6fe0288.bindPopup(popup_96d67ad0beae53cd639d9cd5d73203bc)
+        ;
+
+        
+    
+    
+            marker_9619a4e1d0aec1edae6284c3f6fe0288.bindTooltip(
+                `<div>
+                     Busan New Port
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
